@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include bedding_cost *.css
+recursive-include bedding_cost *.csv
+recursive-include bedding_cost *.html
+recursive-include bedding_cost *.ico
+recursive-include bedding_cost *.js
+recursive-include bedding_cost *.json
+recursive-include bedding_cost *.md
+recursive-include bedding_cost *.png
+recursive-include bedding_cost *.py
+recursive-include bedding_cost *.svg
+recursive-include bedding_cost *.txt
+recursive-exclude bedding_cost *.pyc
