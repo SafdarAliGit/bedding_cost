@@ -1,0 +1,264 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:BC-{YYYY}-{#####}",
+ "creation": "2023-09-23 18:55:06.822957",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_no",
+  "amended_from",
+  "qty",
+  "column_break_u7x7p",
+  "item_article",
+  "size",
+  "section_break_cipw1",
+  "bedding_costing_warp_item",
+  "bedding_costing_weft_item",
+  "pick_on_table",
+  "yarn_required_section",
+  "yarn_consumption_per_piece",
+  "warp_ratio",
+  "column_break_jdcad",
+  "weft_ratio",
+  "total_yarn_required",
+  "conversion_cost_section",
+  "conversion_per_pick",
+  "warp_yarn_cost",
+  "column_break_o0dhe",
+  "weft_yarn_cost",
+  "conversion_cost",
+  "net_cost_section",
+  "freight",
+  "actual_fabric_cost",
+  "overhead_percent",
+  "cost_with_overhead",
+  "section_break_zcwhz",
+  "profit_percent",
+  "cost_with_profit",
+  "tax_percent",
+  "net_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bedding Costing",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "item_article",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Article",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "bedding_costing_warp_item",
+   "fieldtype": "Table",
+   "label": "Bedding Costing Warp Item",
+   "options": "Bedding Costing Warp Item"
+  },
+  {
+   "fieldname": "bedding_costing_weft_item",
+   "fieldtype": "Table",
+   "label": "Bedding Costing Weft Item",
+   "options": "Bedding Costing Weft Item"
+  },
+  {
+   "fieldname": "column_break_u7x7p",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cipw1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pick_on_table",
+   "fieldtype": "Data",
+   "label": "Pick On Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "yarn_required_section",
+   "fieldtype": "Section Break",
+   "label": "Yarn Required"
+  },
+  {
+   "default": "0",
+   "fieldname": "yarn_consumption_per_piece",
+   "fieldtype": "Data",
+   "label": "Yarn Consumption Per Piece",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "warp_ratio",
+   "fieldtype": "Data",
+   "label": "Warp Ratio",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jdcad",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "weft_ratio",
+   "fieldtype": "Data",
+   "label": "Weft Ratio",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_yarn_required",
+   "fieldtype": "Data",
+   "label": "Total Yarn Required",
+   "read_only": 1
+  },
+  {
+   "fieldname": "conversion_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Conversion Cost"
+  },
+  {
+   "fieldname": "conversion_per_pick",
+   "fieldtype": "Data",
+   "label": "Conversion Per Pick"
+  },
+  {
+   "default": "0",
+   "fieldname": "warp_yarn_cost",
+   "fieldtype": "Currency",
+   "label": "Warp Yarn Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_o0dhe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "weft_yarn_cost",
+   "fieldtype": "Currency",
+   "label": "Weft Yarn Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "conversion_cost",
+   "fieldtype": "Currency",
+   "label": "Conversion Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Net Cost"
+  },
+  {
+   "fieldname": "freight",
+   "fieldtype": "Currency",
+   "label": "Freight"
+  },
+  {
+   "fieldname": "overhead_percent",
+   "fieldtype": "Percent",
+   "label": "Overhead Percent"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost_with_overhead",
+   "fieldtype": "Currency",
+   "label": "Cost With Overhead",
+   "read_only": 1
+  },
+  {
+   "fieldname": "profit_percent",
+   "fieldtype": "Percent",
+   "label": "Profit Percent"
+  },
+  {
+   "default": "0",
+   "fieldname": "cost_with_profit",
+   "fieldtype": "Currency",
+   "label": "Cost With Profit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tax_percent",
+   "fieldtype": "Percent",
+   "label": "Tax Percent"
+  },
+  {
+   "default": "0",
+   "fieldname": "net_cost",
+   "fieldtype": "Currency",
+   "label": "Net Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_zcwhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "actual_fabric_cost",
+   "fieldtype": "Currency",
+   "label": "Actual Fabric Cost",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-09-25 22:07:18.795716",
+ "modified_by": "Administrator",
+ "module": "Bedding Cost",
+ "name": "Bedding Costing",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

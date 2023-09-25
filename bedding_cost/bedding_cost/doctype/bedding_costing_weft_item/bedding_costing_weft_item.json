@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-23 18:24:03.113595",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "weft_count",
+  "pick_on_table",
+  "width",
+  "weft_density",
+  "wastage_percent",
+  "yarn_weight",
+  "yarn_rate",
+  "cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "weft_count",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Weft Count"
+  },
+  {
+   "default": "0",
+   "fieldname": "pick_on_table",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Pick On Table"
+  },
+  {
+   "default": "0",
+   "fieldname": "width",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Width"
+  },
+  {
+   "default": "0",
+   "fieldname": "weft_density",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Weft Density",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "wastage_percent",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Wastage Percent"
+  },
+  {
+   "default": "0",
+   "fieldname": "yarn_weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Yarn Weight",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "yarn_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Yarn Rate"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-25 22:07:54.560197",
+ "modified_by": "Administrator",
+ "module": "Bedding Cost",
+ "name": "Bedding Costing Weft Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
